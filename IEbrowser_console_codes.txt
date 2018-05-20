@@ -1,0 +1,128 @@
+var fs1,fs2,fs3,fs4,fs5,fs6,fs7,fs8,fs9,fs10;
+var a1,a2,a3,a4,a5,a6,a7,a8,a9,a10;
+var b1,b2,b3,b4,b5,b6,b7,b8,b9,b10;
+var c1='nothing';
+var c2='nothing';
+var c3='nothing';
+var c4='nothing';
+var c5='nothing';
+var c6='nothing';
+var c7='nothing';
+var c8='nothing';
+var c9='nothing';
+var c10='nothing';
+var test='nothing';
+var appElement = document.querySelector('[ng-controller=chatSenderController]');
+var $scope = angular.element(appElement).scope();
+var interval = setInterval(function(){
+fs1= new ActiveXObject("Scripting.FileSystemObject");
+fs2= new ActiveXObject("Scripting.FileSystemObject");
+fs3= new ActiveXObject("Scripting.FileSystemObject");
+fs4= new ActiveXObject("Scripting.FileSystemObject");
+fs5= new ActiveXObject("Scripting.FileSystemObject");
+fs6= new ActiveXObject("Scripting.FileSystemObject");
+fs7= new ActiveXObject("Scripting.FileSystemObject");
+fs8= new ActiveXObject("Scripting.FileSystemObject");
+fs9= new ActiveXObject("Scripting.FileSystemObject");
+fs10= new ActiveXObject("Scripting.FileSystemObject");
+a1 = fs1.OpenTextFile("d:\\robot\\news1.txt",1) ;
+a2 = fs2.OpenTextFile("d:\\robot\\news2.txt",1) ;
+a3 = fs3.OpenTextFile("d:\\robot\\news3.txt",1) ;
+a4 = fs4.OpenTextFile("d:\\robot\\news4.txt",1) ;
+a5 = fs5.OpenTextFile("d:\\robot\\news5.txt",1) ;
+a6 = fs6.OpenTextFile("d:\\robot\\news6.txt",1) ;
+a7 = fs7.OpenTextFile("d:\\robot\\news7.txt",1) ;
+a8 = fs8.OpenTextFile("d:\\robot\\news8.txt",1) ;
+a9 = fs9.OpenTextFile("d:\\robot\\news9.txt",1) ;
+a10 = fs10.OpenTextFile("d:\\robot\\news10.txt",1) ;
+b1 = a1.ReadAll();
+b2 = a2.ReadAll();
+b3 = a3.ReadAll();
+b4 = a4.ReadAll();
+b5 = a5.ReadAll();
+b6 = a6.ReadAll();
+b7 = a7.ReadAll();
+b8 = a8.ReadAll();
+b9 = a9.ReadAll();
+b10 = a10.ReadAll();
+console.log(b1);
+console.log(b2);
+console.log(b3);
+console.log(b4);
+console.log(b5);
+console.log(b6);
+console.log(b7);
+console.log(b8);
+console.log(b9);
+console.log(b10);
+a1.Close();
+a2.Close();
+a3.Close();
+a4.Close();
+a5.Close();
+a6.Close();
+a7.Close();
+a8.Close();
+a9.Close();
+a10.Close();
+if(b1!==test && b1!==c1 ){
+var output = b1 ;
+$scope.editAreaCtn = output;
+$scope.sendTextMessage();
+c1=b1;
+}
+if(b2!==test && b2!==c2 ){
+var output = b2 ;
+$scope.editAreaCtn = output;
+$scope.sendTextMessage();
+c2=b2;
+}
+if(b3!==test && b3!==c3 ){
+var output = b3 ;
+$scope.editAreaCtn = output;
+$scope.sendTextMessage();
+c3=b3;
+}
+if(b4!==test && b4!==c4 ){
+var output = b4 ;
+$scope.editAreaCtn = output;
+$scope.sendTextMessage();
+c4=b4;
+}
+if(b5!==test && b5!==c5 ){
+var output = b5;
+$scope.editAreaCtn = output;
+$scope.sendTextMessage();
+c5=b5;
+}
+if(b6!==test && b6!==c6 ){
+var output = b6 ;
+$scope.editAreaCtn = output;
+$scope.sendTextMessage();
+c6=b6;
+}
+if(b7!==test && b7!==c7 ){
+var output = b7 ;
+$scope.editAreaCtn = output;
+$scope.sendTextMessage();
+c7=b7;
+}
+if(b8!==test && b8!==c8 ){
+var output = b8 ;
+$scope.editAreaCtn = output;
+$scope.sendTextMessage();
+c8=b8;
+}
+if(b9!==test && b9!==c9 ){
+var output = b9 ;
+$scope.editAreaCtn = output;
+$scope.sendTextMessage();
+c9=b9;
+}
+if(b10!==test && b10!==c10 ){
+var output = b10 ;
+$scope.editAreaCtn = output;
+$scope.sendTextMessage();
+c10=b10;
+}
+},300000);
