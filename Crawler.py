@@ -106,7 +106,7 @@ while True:
         randomsleep1=random.randint(60,120)
         time.sleep(randomsleep1)
         r1_final = requests.get(href1_final,allow_redirects=False)
-        soup1_final = BeautifulSoup(r1_final.content,'lxml')
+        soup1_final = BeautifulSoup(r1_final.content,'html5lib')
         link1_final1=soup1_final.select('title:nth-of-type(1)')
         result1_1=link1_final1[0].get_text()
         #得到第1段
